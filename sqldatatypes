@@ -1,0 +1,26 @@
+SQL'DE VERI TIPLERI 
+https://www.postgresql.org/docs/current/datatype.html
+
+STRINGS AND NUMERICS
+  METINSEL VERI TIPLERI
+SQL'de metinsel veri tipleri, veritabanındaki metin verilerini saklamak için kullanılan veri tipleridir. Metinsel veri tipleri arasında en yaygın olanlar şunlardır:
+    CHAR: Sabit uzunlukta ki metin verileri için kullanılır. Kalıp halinde belirli harf veya sayı dizisi için kullanılır. Örneğin, CHAR(20) 20 adetlik diziyi doldurur.
+          20 karakterden uzunsa atlanır, kısa ise boşluklarla doldurur.
+    VARCHAR: Değişebilir metin uzunlukları için kullanılır. 
+            Metin değerleri için maksimum değer yazılır VARCHAR(250) gibi, fakat metin bu değer kadar uzun değilse gerçek metin uzunluğu kadar alan kaplar.
+    TEXT: Uzun metin verileri için kullanılır. Bu veri tipi genellikle CHAR ve VARCHAR'tan daha fazla karakter saklamak için kullanılır.
+          Örneğin, bir makale veya yazının içeriği için kullanılabilir. 
+          Bu veri tipi, saklanacak metinin uzunluğuna göre büyüyebilir ve genellikle maksimum 2^32 -1 (4GB) kadar veri saklayabilir.
+  SAYISAL VERI TIPLERI
+    INTEGER(INT): 
+
+    SMALLINT:
+
+    BIGINT:
+
+    FLOAT:
+
+    DECIMAL:
+
+    DOUBLE PRECISION:
+
