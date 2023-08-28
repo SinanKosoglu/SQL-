@@ -12,15 +12,50 @@ SQL'de metinsel veri tipleri, veritabanındaki metin verilerini saklamak için k
           Örneğin, bir makale veya yazının içeriği için kullanılabilir. 
           Bu veri tipi, saklanacak metinin uzunluğuna göre büyüyebilir ve genellikle maksimum 2^32 -1 (4GB) kadar veri saklayabilir.
   SAYISAL VERI TIPLERI
-    INTEGER(INT): 
+    INTEGER(INT): Tam sayılar için kullanılır. Örneğin, bir kişinin yaşını veya sipariş miktarını görmek için kullanılır. 4byte
 
-    SMALLINT:
+    SMALLINT: Küçük tam sayılar için kullanılır. Stok miktarı veya düşük sayılar için kullanılabilir. 2byte
 
-    BIGINT:
+    BIGINT: Büyük tam sayılar için kullanılır. Bir ülke nüfusu veya daha büyük sayılar için kullanılabilir. 8 byte
 
-    FLOAT:
+    FLOAT: Ondalıklı sayılar için kullanılır. Örneğin, bir ürünün fiyatını saklamak için FLOAT kullanılabilir. 
+          FLOAT veri tipi genellikle 4 byte'lık bir veri tipidir ve ondalık noktasına kadar 7 veya 8 hane hassasiyette bir sayı saklayabilir.
 
-    DECIMAL:
+    DECIMAL: Ondalıklı sayıları sabit bir hassasiyette saklar. Örneğin, DECIMAL(10,2) veri tipi, en fazla 10 rakamlı ve 2 ondalıklı sayıları saklar.
 
-    DOUBLE PRECISION:
+    DOUBLE PRECISION: Ondalıklı sayıları daha yüksek bir hassasiyette saklar. 
+                      Bu veri tipi, daha büyük sayıları ve daha yüksek hassasiyeti gerektiren uygulamalar için idealdir. 
+                      Bir fiziksel ölçüm için DOUBLE PRECISION kullanılabilir.
+BOOLEN VERI TIPI
+  BOOLEAN veri tipi, true/false (doğru/yanlış) değerlerini saklamak için kullanılır. Bu veri tipi, sadece iki değer alabilir: true ve false.
+    •	Bir kullanıcının hesabının aktif/deaktif durumunu saklamak için
+    •	Bir ürünün stokta/stokta olmadığı durumunu saklamak için
+    •	Bir sorunun çözüldü/çözülmedi durumunu saklamak için
 
+TARİH VE ZAMAN VERİ TİPLERİ
+  Bu veri tipi tarih ve zaman verilerini saklar.
+    DATE: Sadece tarih bilgisi saklanır '2023-12-31' . İşe giriş tarihi veya son kullanma tarihi gibi.
+
+    TIME: Sadece saat bilgisi saklanır '13:25:59'. Sipariş zamanı gibi.
+
+    DATETIME: Tarih ve saat bilgisi birlikte saklanır '2023-12-31 13:25:59' 
+
+    TIMESTAMP: Tarih, saat ve zaman dilimi bilgilerini saklar '2023-12-31 13:25:59 UTC'
+
+    INTERVAL: Zaman aralığı saklar. '2 years 3 months 4 days' gibi
+
+### **JSON Veri Tipleri**
+
+    **JSON:** JSON verilerini saklar. JSON veri tipi, verileri düz metin olarak saklar. 
+            Bu, verilerin daha sonra okunması ve sorgulanması için JSONB’den daha yavaş olabilir.
+
+    Örnek: '{"isim":"Ahmet","yas":25}'
+
+    **JSONB**: Binary JSON verilerini saklar.JSONB veri tipi, verileri binary (ikili) formatında saklar. 
+              Bu veri tipi JSON veri tipinden daha hızlı ve daha az bellek kullanır.
+
+    Örnek: '{"isim":"Ahmet","yas":25}'
+
+    **Bu veri tipleri, SQL sorguları ile kullanılabildiği gibi, daha esnek ve hızlı bir şekilde JSON verileri saklamak için kullanılabilir.**
+
+    Örneğin, PostgreSQL gibi bazı SQL veritabanları, JSON veri tipleri ile birlikte gelir ve JSON verilerini sorgulamak için özel operatörler sunar.
