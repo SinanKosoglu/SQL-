@@ -59,3 +59,9 @@ TARİH VE ZAMAN VERİ TİPLERİ
     **Bu veri tipleri, SQL sorguları ile kullanılabildiği gibi, daha esnek ve hızlı bir şekilde JSON verileri saklamak için kullanılabilir.**
 
     Örneğin, PostgreSQL gibi bazı SQL veritabanları, JSON veri tipleri ile birlikte gelir ve JSON verilerini sorgulamak için özel operatörler sunar.
+
+ARRAY VERİ TİPİ
+  SQL veritabanlarında, array veri tipleri bir dizi (koleksiyon) içinde birden çok veriyi saklamak için kullanılır. 
+  Array veri tipleri, bir kolon içinde birden çok veriyi saklamak için kullanılabilir. 
+  Genellikle bir tablo içinde bir kullanıcının birden çok özelliğini saklayabilir. 
+  Örneğin bir web sitesindeki kullanıcının bir veya birden çok telefon numarasını saklamak için array veri tipi kullanılabilir.
