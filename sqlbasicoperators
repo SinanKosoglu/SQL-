@@ -93,6 +93,20 @@ select
 	isim,
 	soyisim,
 	(vize1*0.25)+(vize2*0.25)+(final*0.5)
-
-
+---------------------------------------------------------------------
+create table ogrenci
+(
+	ogrenci_id integer not null primary key,
+	isim varchar(30),
+	soyisim varchar(30),
+	course_id integer
+)
+create table course_info
+(
+	course_id integer not null primary key,
+	course_title varchar(150)
+)
+alter table ogrenci add constraint course_id_fkey foreign key (course_id) references course_info (course_id)
+;
+alter table ogrenci drop constraint course_id_fkey
   
