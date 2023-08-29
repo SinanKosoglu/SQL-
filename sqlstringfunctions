@@ -1,7 +1,8 @@
 SQL'DE STRING FUNCTIONS
-
+ **Yazı olan sütunlar üzerinde komutlar yazmamızı sağlayan kalıplardır. 
   CONCAT
-
+ - 2 farklı sütunda ki yazıyı tek sütuna birleştirmek için yazılan komuttur.
+  
 
   LEFT
 
