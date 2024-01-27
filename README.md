@@ -97,8 +97,8 @@ Foreign key ile:
 
 Ddl
 Data definition language (ddl) ifadeleri veritabanındaki yapı tanımları için kullanılır. Örnek olarak;
-Create – veritabanında nesne, tablo oluşturur.
-Alter – veritabanında ki tablolar üzerinde değişiklik yapılmasını sağlar. Örneğin nitelik eklemek, çıkarmak ve değiştirmek bu komut ile yapılır.
+	Create – veritabanında nesne, tablo oluşturur.
+	Alter – veritabanında ki tablolar üzerinde değişiklik yapılmasını sağlar. Örneğin nitelik eklemek, çıkarmak ve değiştirmek bu komut ile yapılır.
 Drop – tabloların nesnelerin silinmesini sağlar.
 Truncate – tablolardaki tüm kayıtları boşaltır. 
 Rename- nesne veya tablonun yeniden isimlendirilmesini sağlar. Alter komutu ile beraber kullanılır. 
