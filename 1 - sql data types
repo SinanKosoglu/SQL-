@@ -27,5 +27,51 @@ BOOLEN VERI TIPI
     •	Bir ürünün stokta/stokta olmadığı durumunu saklamak için
     •	Bir sorunun çözüldü/çözülmedi durumunu saklamak için
 
-![alt text](https://github.com/SinanKosoglu/SQL-learnings-/issues/1#issue-2103634426)
+![image](https://github.com/SinanKosoglu/SQL-learnings-/issues/1#issue-2103634426)
 
+**BOOLEAN Veri Tipi**
+
+_BOOLEAN_ veri tipi, true/false (doğru/yanlış) değerlerini saklamak için kullanılır. Bu veri tipi, sadece iki değer alabilir: true ve false. Örnek verecek olursak:
+
+Bir kullanıcının hesabının aktif/deaktif durumunu saklamak için BOOLEAN veri tipi kullanabilirsiniz.
+Bir ürünün stokta/stokta olmadığı durumunu saklamak için BOOLEAN veri tipi kullanabilirsiniz.
+Bir sorunun çözüldü/çözülmedi durumunu saklamak için BOOLEAN veri tipi kullanabilirsiniz.
+
+
+**Tarih-Zaman Veri Tipleri**
+
+-_DATE_: Sadece tarih bilgisini saklar, "2022-12-31" gibi. Örneğin bir ürünün son kullanma tarihini saklamak için DATE veri tipi kullanabilirsiniz.
+
+-_TIME_: Sadece saat bilgisini saklar, "12:30:15" gibi. Bir siparişin saatini saklamak için TIME veri tipi kullanabilirsiniz.
+
+-_DATETIME_: Tarih ve saat bilgisini birlikte saklar, "2022-12-31 12:30:15" gibi. Bir haberin yayınlanma tarihini saklamak için DATETIME veri tipi kullanabilirsiniz.
+
+-_TIMESTAMP_: Tarih ve saat bilgisini birlikte saklar ve ayrıca bu bilgilerin hangi zaman diliminde olduğunu da saklar. Örneğin, "2022-12-31 12:30:15 UTC" gibi. 
+Bir gönderinin zaman damgasını saklamak için TIMESTAMP veri tipi kullanabilirsiniz.
+
+-_INTERVAL_: Zaman aralığını saklar. Örneğin "2 years 3 months 4 days" gibi. Bir projenin süresini saklamak için INTERVAL veri tipi kullanabilirsiniz.
+
+**Array Veri Tipi**
+
+SQL veritabanlarında, array veri tipleri bir dizi (koleksiyon) içinde birden çok veriyi saklamak için kullanılır. Array veri tipleri, bir kolon içinde birden çok 
+veriyi saklamak için kullanılabilir ve genellikle bir tablo içinde bir kullanıcının birden çok özelliğini saklayabilir. Örneğin bir web sitesindeki kullanıcının 
+bir veya birden çok telefon numarasını saklamak için array veri tipi kullanılabilir.
+
+
+**2.Veri Tabanlarında Anahtar (Key) Kavramı**
+
+İlişkisel veritabanları, verileri saklamak ve sorgulamak için SQL (Structured Query Language) kullanır. Veritabanlarında oluşturduğumuz tablonun bir diğer tablo ile ilişki kurabilmesi için anahtar kavramını anlamak gerekir. 
+
+-_Primary Key (Birincil Anahtar)_
+
+Primary Key (Birincil Anahtar) bir veri tabanında bir tablo içerisindeki her bir kaydı benzersiz bir şekilde tanımlamak için kullanılan bir anahtardır. Birincil anahtar, tablodaki diğer anahtarlar primary key'den referans alır. 
+
+-_Foreign Key (Yabancı Anahtar)_
+
+Foreign Key (Yabancı Anahtar) SQL'de bir başka tablonun birincil anahtarına bağlantı kurmak için kullanılan anahtardır. Foreign key, ilişkisel veri tabanlarında tablolar arasında ilişki tanımlamak için kullanılır.
+
+Foreign key ile:
+- Veri tabanındaki tablolar arasında ilişki kurulur.
+- Veri güvenliği sağlanır.
+- Veri kalitesi sağlanır.
+- Veri normalizasyonu sağlanır.
