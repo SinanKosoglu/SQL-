@@ -27,8 +27,6 @@ BOOLEN VERI TIPI
     •	Bir ürünün stokta/stokta olmadığı durumunu saklamak için
     •	Bir sorunun çözüldü/çözülmedi durumunu saklamak için
 
-![image](https://github.com/SinanKosoglu/SQL-learnings-/issues/1#issue-2103634426)
-
 **BOOLEAN Veri Tipi**
 
 _BOOLEAN_ veri tipi, true/false (doğru/yanlış) değerlerini saklamak için kullanılır. Bu veri tipi, sadece iki değer alabilir: true ve false. Örnek verecek olursak:
