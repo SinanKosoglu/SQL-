@@ -95,35 +95,6 @@ Foreign key ile:
 
 **3.SQL'de Temel Operatörler**
 
-Ddl
-Data definition language (ddl) ifadeleri veritabanındaki yapı tanımları için kullanılır. Örnek olarak;
-	Create – veritabanında nesne, tablo oluşturur.
-	Alter – veritabanında ki tablolar üzerinde değişiklik yapılmasını sağlar. Örneğin nitelik eklemek, çıkarmak ve değiştirmek bu komut ile yapılır.
-Drop – tabloların nesnelerin silinmesini sağlar.
-Truncate – tablolardaki tüm kayıtları boşaltır. 
-Rename- nesne veya tablonun yeniden isimlendirilmesini sağlar. Alter komutu ile beraber kullanılır. 
-Dml
-Data manupulation language (dml), ifadeleri verileri yönlendirmekte kullanılır. Tabloya kayıt girmek, kayıt silmek güncellemek gibi işlemlerin yapıldığı yer 
-Select – veri tabanından bilgileri alıp getirmek için kullanılır. Veri tabanında ki verileri okumaya yarar. EN ÇOK KULLANILAN KOMUTTUR. 
-Insert – tabloya kayıt girmek için kullanılır.
-Update – tablo içindeki var olan kayıtları güncellemek için kullanılır.
-Delete- kayıt silmek için kullanılır. Örneğin, Otuz yaşından büyük olanların verilerini değiştirir. KESİNLİKLE ŞART KOŞULMALIDIR. 
-Truncate – tamamen silmek demek. Sözcük anlamı kırpmak. 
-Create database student_ders2
-;
-create table ogrenci 
-(
-	id integer not null,
-	isim varchar(50) not null,
-	soyisim varchar(50),
-	primary key (id)
-)
-create table ders
-(
-	id integer not null,
-	ders_adi varchar(100) not null,
-
-
 -_CREATE Komutu_
 
 SQL'de, CREATE komutu veritabanı veya tablolarda yeni bir tablo oluşturmak için kullanılır. 
