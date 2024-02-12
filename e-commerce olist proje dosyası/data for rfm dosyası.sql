@@ -30,14 +30,19 @@ ALTER COLUMN invoicedate TYPE timestamp USING invoicedate::timestamp;
 ;
 --Tabloyu bu sekilde olusturdum. ardindan £ sembolu utf 8 desteklemiyor. ancak win 1251 destekliyor. 
 --encodingi win1251 yapinca datayi hic degistirmeden hata almadan import edebildim
+
 --RFM ANALİZİ
+
 --recency - müşteri bazlı en son sipariş ile bir önce ki sipariş arasında ne kadar zaman var. 
 --frequency - alışveriş sıklığı satış bazlı
 --monetary - para bazlı
+
 select * from rfmdata order by 1 limit 500
+	
 --recency
 --Her müşteri en son alışveriş tarihinden '2011-12-09' önce ne zaman alışveriş yapmış. 
 --Normalde bugünün tarihinden önce ne zaman alışveriş yapmış bakılır. 
+	
 WITH lastinvoicedate AS
 	(SELECT customerid,
 			MAX(invoicedate)::date AS last_invoice_date
@@ -50,6 +55,7 @@ SELECT customerid,
 FROM lastinvoicedate
 WHERE 
 	(SELECT MAX(invoicedate)::date FROM rfmdata)::date - last_invoice_date != 0;
+
 --The query filters out records where the recency is not equal to zero, 
 --meaning it selects customers whose last purchase date is not the same as the maximum purchase date for all customers in the dataset.
 
@@ -82,6 +88,7 @@ group by 1
 order by 2 desc 
 
 --rfm çıktılarını birleştirme ve cevap
+	
 with rfm_segment_analysis as (
 with RFM_SCORES AS (
 with recency as (
