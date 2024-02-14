@@ -6,8 +6,8 @@ select * from orders limit 100 --99441 adet sipariş
 select * from product_category_name_translation limit 100 - 71 adet ürün kategorisi var
 select * from products limit 100 --32951 ürün var
 select * from sellers limit 100
--- 1.case 1.soru
--- aylık olarak order dağılımını inceleyin. tarih verisi için order_approved_at
+
+-- aylık olarak order dağılımı incelemesi. tarih verisi için order_approved_at
 
 Select 
 	extract ('Month' from order_approved_at) as AY,
@@ -19,10 +19,9 @@ group by
 order by
 	1
 ;
--- 1. case 2. soru
---Aylık olarak order status kırılımında order sayılarını inceleyiniz. 
---Sorgu sonucunda çıkan outputu excel ile görselleştiriniz. 
---Dramatik bir düşüşün ya da yükselişin olduğu aylar var mı? Veriyi inceleyerek yorumlayınız.
+--Aylık olarak order status kırılımında order sayıları incelemesi.
+--Sorgu sonucunda çıkan outputu excel ile görselleştirimi. 
+--Dramatik bir düşüşün ya da yükselişin olduğu aylar var mı? 
 
 select 
 	order_status,
